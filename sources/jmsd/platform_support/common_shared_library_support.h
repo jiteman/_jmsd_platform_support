@@ -29,12 +29,12 @@
 
 
 	#if !defined( JMSD_SHARED_EXPORT_CONVENTION )
-		#define JMSD_SHARED_EXPORT_CONVENTION
+		#define JMSD_SHARED_EXPORT_CONVENTION	__attribute__( ( visibility( "default" ) ) )
 	#endif
 
 
 	#if !defined( JMSD_SHARED_IMPORT_CONVENTION )
-		#define JMSD_SHARED_IMPORT_CONVENTION
+		#define JMSD_SHARED_IMPORT_CONVENTION	__attribute__( ( visibility( "default" ) ) )
 	#endif
 
 
